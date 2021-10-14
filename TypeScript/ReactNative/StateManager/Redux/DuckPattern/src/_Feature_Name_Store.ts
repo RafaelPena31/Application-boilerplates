@@ -10,8 +10,8 @@
  */
 
 import { Dispatch } from "redux";
-import _Feature_Name_Service from "../../../Service/_Feature_Name_Service";
-import { _Feature_Name_Model } from "../../../Types/_Feature_Name_Model";
+import _Feature_Name_Service from "../../../../../General/Service/_Feature_Name_Service";
+import { _Feature_Name_Model } from "../../../../../General/Types/_Feature_Name_Model";
 
 export const SET__FEATURE_NAME_ = "SET__FEATURE_NAME_";
 export const UPDATE__FEATURE_NAME_ = "UPDATE__FEATURE_NAME_";
