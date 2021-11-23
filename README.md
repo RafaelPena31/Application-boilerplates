@@ -35,6 +35,7 @@ We are looking for excited devs to contribute their knowledge to this repository
 ## Author
 
 - [@RafaelPena31](https://github.com/RafaelPena31) - Rafael Augusto Pena
+- [@WladmirJunior](https://github.com/WladmirJunior) - Wladmir Júnior
 
 
 **[⬆ back to top](#table-of-contents)**
