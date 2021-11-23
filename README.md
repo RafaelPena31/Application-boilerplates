@@ -14,6 +14,7 @@
                * [Memo](https://github.com/RafaelPena31/Application-boilerplates/tree/master/TypeScript/StateManager/Context/Memo)
       * [Swift](https://github.com/RafaelPena31/Application-boilerplates/tree/master/Swift)
          * [View Code Template](https://github.com/RafaelPena31/Application-boilerplates/tree/master/Swift/View%20Code%20Template.xctemplate)
+         * [Use Case Template](https://github.com/RafaelPena31/Application-boilerplates/tree/master/Swift/UseCase%20Template.xctemplate)
          * [Extensions](https://github.com/RafaelPena31/Application-boilerplates/tree/master/Swift/Extensions)
             * [UIView](https://github.com/RafaelPena31/Application-boilerplates/blob/master/Swift/Extensions/UIView%2BExt.swift)
    3. [Author](#author)
