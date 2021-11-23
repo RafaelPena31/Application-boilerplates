@@ -10,8 +10,8 @@
  */
 
 import { Dispatch } from "redux";
-import _Feature_Name_Service from "../../../../../General/Service/_Feature_Name_Service";
-import { _Feature_Name_Model } from "../../../../../General/Types/_Feature_Name_Model";
+import { _Feature_Name_Model } from "../_Feature_Name_Model";
+import { create_Feature_Name_ } from "../_Feature_Name_Service";
 
 export const SET__FEATURE_NAME_ = "SET__FEATURE_NAME_";
 export const UPDATE__FEATURE_NAME_ = "UPDATE__FEATURE_NAME_";
@@ -73,10 +73,9 @@ export const _Feature_Name_Reducer = (
 export const Set_Feature_Name_ =
   (_feature_Name_stateData: _Feature_Name_Model) =>
   async (dispatch: Dispatch<_Feature_Name_Actions>) => {
-    const cache_feature_Name_ =
-      await _Feature_Name_Service().create_Feature_Name_(
-        _feature_Name_stateData
-      );
+    const cache_feature_Name_ = await create_Feature_Name_(
+      _feature_Name_stateData
+    );
 
     dispatch({ type: SET__FEATURE_NAME_, payload: cache_feature_Name_ });
   };
