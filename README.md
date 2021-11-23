@@ -58,7 +58,7 @@ Contact `rafaelppena31@gmail.com` to start your contribution
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/RafaelPena31/Application-boilerplates/blob/master/LICENSE)
 
 
 **[⬆ back to top](#table-of-contents)**
