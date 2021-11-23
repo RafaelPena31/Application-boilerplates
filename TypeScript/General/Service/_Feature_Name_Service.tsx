@@ -11,52 +11,55 @@
 
 import { Roles, _Feature_Name_Model } from "../Types/_Feature_Name_Model";
 
-export interface I_Feature_Name_Service {
-  get_Feature_Name_ById: (id: string) => Promise<_Feature_Name_Model>;
-  create_Feature_Name_: (
-    user: _Feature_Name_Model
-  ) => Promise<_Feature_Name_Model>;
-  update_Feature_Name_ById: (
-    user: _Feature_Name_Model
-  ) => Promise<_Feature_Name_Model>;
-  delete_Feature_Name_ById: (id: string) => Promise<void>;
-}
+type get_Feature_Name_ById = (id: string) => Promise<_Feature_Name_Model>;
+type create_Feature_Name_ = (
+  user: _Feature_Name_Model
+) => Promise<_Feature_Name_Model>;
+type update_Feature_Name_ById = (
+  user: _Feature_Name_Model
+) => Promise<_Feature_Name_Model>;
+type delete_Feature_Name_ById = (id: string) => Promise<void>;
 
-export default function _Feature_Name_Service(): I_Feature_Name_Service {
-  return {
-    get_Feature_Name_ById: async (id: string) => {
-      /**
-       * Insert your code here
-       */
+const get_Feature_Name_ById: get_Feature_Name_ById = async (id: string) => {
+  /**
+   * Insert your code here
+   */
 
-      return Promise.resolve({
-        id: id,
-        name: "Rafael Pena",
-        role: Roles.ADMIN,
-        email: "rafael@rafaelpena.com",
-        password: "your_pass",
-      });
-    },
-    create_Feature_Name_: async (user: _Feature_Name_Model) => {
-      /**
-       * Insert your code here
-       */
+  return Promise.resolve({
+    id: id,
+    name: "Rafael Pena",
+    role: Roles.ADMIN,
+    email: "rafael@rafaelpena.com",
+    password: "your_pass",
+  });
+};
 
-      return Promise.resolve(user);
-    },
-    update_Feature_Name_ById: async (user: _Feature_Name_Model) => {
-      /**
-       * Insert your code here
-       */
+const create_Feature_Name_: create_Feature_Name_ = async (
+  user: _Feature_Name_Model
+) => {
+  /**
+   * Insert your code here
+   */
 
-      return Promise.resolve(user);
-    },
-    delete_Feature_Name_ById: async (id: string) => {
-      /**
-       * Insert your code here
-       */
+  return Promise.resolve(user);
+};
 
-      return Promise.resolve();
-    },
-  };
-}
+const update_Feature_Name_ById: update_Feature_Name_ById = async (
+  user: _Feature_Name_Model
+) => {
+  /**
+   * Insert your code here
+   */
+
+  return Promise.resolve(user);
+};
+
+const delete_Feature_Name_ById: delete_Feature_Name_ById = async (
+  id: string
+) => {
+  /**
+   * Insert your code here
+   */
+
+  return Promise.resolve();
+};
