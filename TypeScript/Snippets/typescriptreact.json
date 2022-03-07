@@ -1,0 +1,115 @@
+{
+  "React - Default component": {
+    "prefix": "rn-dc",
+    "body": [
+      "import React from 'react'",
+      "import { StyleSheet, View } from 'react-native'",
+      "",
+      "export default function ${1:Component}() {",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t<View />",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "})",
+      ""
+    ],
+    "description": "Create default `React Native Component`"
+  },
+
+  "React - Default component with Props": {
+    "prefix": "rn-dc:props",
+    "body": [
+      "import React from 'react'",
+      "import { StyleSheet, View } from 'react-native'",
+      "",
+      "interface ${1:Component}Props {",
+      "\t${2:prop}: ${3:propValue}",
+      "}",
+      "",
+      "export default function ${1:Component}({ ${2:prop} }: ${1:Component}Props) {",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t<View />",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "})",
+      ""
+    ],
+    "description": "Create default `React Native Component` with Props"
+  },
+
+  "React - Default screen": {
+    "prefix": "rn-ds",
+    "body": [
+      "import React from 'react'",
+      "import { StyleSheet, View } from 'react-native'",
+      "",
+      "export default function ${1:Screen}() {",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t<View />",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "})",
+      ""
+    ],
+    "description": "Create default `React Native Screen`"
+  },
+
+  "React - Default screen with RouteProps": {
+    "prefix": "rn-ds:route",
+    "body": [
+      "import React from 'react'",
+      "import { StyleSheet, View } from 'react-native'",
+      "import { RouteProp } from '@react-navigation/native'",
+      "import { StackNavigationProp } from '@react-navigation/stack'",
+      "",
+      "interface RouteParams {",
+      "\t${1:prop}: ${2:propValue}",
+      "}",
+      "",
+      "interface NavigationProps {",
+      "\troute: RouteProp<Record<string, RouteParams>, 'RouteParam'>",
+      "\tnavigation: StackNavigationProp<Record<string, any | undefined>, ''>",
+      "}",
+      "",
+      "export default function ${3:Component}Screen({ route, navigation }: NavigationProps) {",
+      "\tconst { ${1:prop} } = route.params",
+      "\tconst { navigate } = navigation",
+      "",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t<View />",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "})",
+      ""
+    ],
+    "description": "Create default `React Native Screen` with RouteProps"
+  }
+}
