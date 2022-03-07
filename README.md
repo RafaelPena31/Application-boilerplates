@@ -4,6 +4,7 @@
    1. [Description](#description)
    2. [Technologies included](#technologies-included)
       * [Typescript](https://github.com/RafaelPena31/Application-boilerplates/tree/master/TypeScript)
+         * [Snippets](https://github.com/RafaelPena31/Application-boilerplates/tree/master/TypeScript/Snippets) 
          * [React Native](https://github.com/RafaelPena31/Application-boilerplates/tree/master/TypeScript/ReactNative/)
             * [M-V-P Module](https://github.com/RafaelPena31/Application-boilerplates/tree/master/TypeScript/ReactNative/MVP/modules/_Feature_Name_)
          * [State Managers](https://github.com/RafaelPena31/Application-boilerplates/tree/master/TypeScript/StateManager/)
