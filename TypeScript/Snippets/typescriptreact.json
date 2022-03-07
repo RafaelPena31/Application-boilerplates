@@ -111,5 +111,47 @@
       ""
     ],
     "description": "Create default `React Native Screen` with RouteProps"
+  },
+
+  "React - Redux:Duck-Pattern": {
+    "prefix": "r-rdx:duck",
+    "body": [
+      "import { Dispatch } from 'redux'",
+      "import { ${1:MODULE_NAME}Type } from '../${1:MODULE_NAME}.types'",
+      "",
+      "export const SET_${2:UPPERCASE_MODULE_NAME} = 'SET_${2:UPPERCASE_MODULE_NAME}'",
+      "",
+      "interface Set${1:MODULE_NAME}Action {",
+      "\ttype: typeof SET_${2:UPPERCASE_MODULE_NAME}",
+      "\tpayload: ${1:MODULE_NAME}Type",
+      "}",
+      "",
+      "export interface ${1:MODULE_NAME}TypeState {",
+      "\t${3:CAMELCASE_MODULE_NAME}Data: ${1:MODULE_NAME}Type | null",
+      "}",
+      "",
+      "export type ${1:MODULE_NAME}TypeActions = Set${1:MODULE_NAME}Action",
+      "",
+      "export const ${3:CAMELCASE_MODULE_NAME}State: ${1:MODULE_NAME}TypeState = {",
+      "\t${3:CAMELCASE_MODULE_NAME}Data: null",
+      "}",
+      "",
+      "export const ${1:MODULE_NAME}Reducer = (state = ${3:CAMELCASE_MODULE_NAME}State, action: ${1:MODULE_NAME}TypeActions) => {",
+      "\tswitch (action.type) {",
+      "\t\tcase SET_${2:UPPERCASE_MODULE_NAME}:",
+      "\t\t\treturn {",
+      "\t\t\t\t...state,",
+      "\t\t\t\t${3:CAMELCASE_MODULE_NAME}Data: action.payload",
+      "\t\t\t}",
+      "\t\tdefault:",
+      "\t\t\treturn state",
+      "\t}",
+      "}",
+      "",
+      "export const Set${1:MODULE_NAME} = (state: ${1:MODULE_NAME}Type) => async (dispatch: Dispatch<${1:MODULE_NAME}TypeActions>) => {",
+      "\tdispatch({ type: SET_${2:UPPERCASE_MODULE_NAME}, payload: state })",
+      "}",
+      ""
+    ]
   }
 }
